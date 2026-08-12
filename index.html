@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -60,30 +61,25 @@
             animation: fadeInDown 1s ease-out;
         }
 
-        /* Estructura lista para el logo. Si se añade img, el div se adapta */
+        /* Estructura optimizada para el logo oficial de Muebles Lasso */
         .logo-placeholder {
-            width: 90px;
-            height: 90px;
-            border: 2px dashed rgba(212, 175, 55, 0.3);
-            border-radius: 50%;
+            width: 100px;
+            height: 100px;
             margin: 0 auto 20px auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: var(--texto-gris);
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
             transition: all 0.4s ease;
         }
 
-        /* Cuando tengas el logo listo, borra el borde dashed de arriba y usa esta clase para la imagen */
+        /* Clase para la imagen del logo oficial, completamente responsive y proporcional */
         .logo-img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 50%;
             border: 2px solid var(--dorado-premium);
+            background-color: transparent;
         }
 
         .brand-name {
@@ -256,9 +252,9 @@
         
         <!-- ENCABEZADO -->
         <header class="header">
-            <!-- Espacio reservado para Logo. Para activarlo, quita el texto interno y pon una etiqueta <img src="logo.png" class="logo-img" alt="Logo Muebles Lasso"> -->
+            <!-- Contenedor del Logo Oficial -->
             <div class="logo-placeholder">
-                <i class="fa-solid fa-couch" style="font-size: 24px; color: var(--dorado-premium);"></i>
+                <img src="logo.png" class="logo-img" alt="Logo Muebles Lasso">
             </div>
             <h1 class="brand-name">Muebles Lasso</h1>
             <p class="brand-slogan">Elegancia y confort para tu hogar</p>
@@ -268,7 +264,6 @@
         <main class="links-wrapper">
             
             <!-- ELEMENTO DESTACADO: CATÁLOGO PDF -->
-            <!-- Nota: Solo debes colocar el archivo "muebles-lasso.pdf" en la misma carpeta raíz que este index.html -->
             <a href="muebles-lasso.pdf" class="btn-catalog" target="_blank">
                 <i class="fa-solid fa-couch"></i>
                 Catálogo Muebles Lasso
@@ -303,3 +298,4 @@
 
 </body>
 </html>
+
